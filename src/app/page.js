@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Download, ShieldCheck, Zap, Globe, Smartphone, ArrowRight, CheckCircle2, ChevronRight, BarChart3, Users, Lock, ChevronDown } from "lucide-react";
 
@@ -23,9 +24,13 @@ export default function LandingPage() {
       <header className="fixed w-full top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-slate-200/50 transition-all">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-800 to-blue-950 flex items-center justify-center shadow-lg shadow-blue-900/20">
-              <span className="text-white font-bold text-xl">K</span>
-            </div>
+            <Image
+              src="/icon.png"
+              alt="Kajy Mazava"
+              width={40}
+              height={40}
+              className="rounded-xl shadow-lg shadow-blue-900/20"
+            />
             <span className="text-xl font-black text-slate-900 tracking-tight">KAJY MAZAVA</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
@@ -78,7 +83,7 @@ export default function LandingPage() {
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center gap-5">
               <a
-                href={process.env.NEXT_PUBLIC_APK_URL || "https://drive.google.com/file/d/1r8btxv9EfJDdhbkFLxRNeT0mRA-MGM0O/view?usp=drive_link"}
+                href="/KAJYMazava-v1.0.0.apk"
                 download
                 className="w-full sm:w-auto flex items-center justify-center gap-3 bg-blue-900 hover:bg-blue-950 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-blue-900/20 transition-all hover:-translate-y-1"
               >
@@ -360,7 +365,7 @@ export default function LandingPage() {
                 <h4 className="text-lg font-black text-slate-900">Application Android (APK)</h4>
                 <p className="text-slate-500 text-sm mb-4">Version 1.0.0 • Sécurisé • Sans Publicité</p>
                 <a
-                  href={process.env.NEXT_PUBLIC_APK_URL || "https://drive.google.com/file/d/1r8btxv9EfJDdhbkFLxRNeT0mRA-MGM0O/view?usp=drive_link"}
+                  href="/KAJYMazava-v1.0.0.apk"
                   download
                   className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-3.5 rounded-xl font-bold transition-all shadow-md active:scale-95"
                 >
@@ -412,9 +417,13 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between mb-16 border-b border-slate-800 pb-16">
           <div className="flex flex-col items-center md:items-start mb-10 md:mb-0">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-600/20">
-                <span className="text-white font-bold text-xl">K</span>
-              </div>
+              <Image
+                src="/icon.png"
+                alt="Kajy Mazava"
+                width={40}
+                height={40}
+                className="rounded-xl shadow-lg shadow-blue-600/20"
+              />
               <span className="text-2xl font-black text-white tracking-tight">KAJY MAZAVA</span>
             </div>
             <p className="text-slate-400 max-w-sm text-center md:text-left">
