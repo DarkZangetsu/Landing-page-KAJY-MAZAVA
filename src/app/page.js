@@ -395,7 +395,7 @@ export default function LandingPage() {
               <ul className="space-y-6">
                 {[
                   "Smartphone ou Tablette Android (v8.0 ou supérieur).",
-                  "Espace de stockage : 30 Mo minimum.",
+                  "Espace de stockage : 200 Mo minimum.",
                   "Aucune connexion permanente requise pour un usage journalier.",
                   "Pas de compte Google nécessaire."
                 ].map((feature, i) => (
